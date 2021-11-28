@@ -1,0 +1,38 @@
+= RoboCup Rescue Agent Sample Team
+:author: RoboCup Rescue Team
+:nofooter:
+
+(Linux) This repository contains the Java code of a sample agent team for the RoboCup Rescue Simulator.
+
+== Software Pre-Requisites
+
+* Git
+* OpenJDK Java 17
+* Gradle
+
+== Installation
+
+=== Download project from GitHub
+
+```bash
+
+$ git clone git@github.com:roborescue/rcrs-sample-agent-java.git
+```
+
+=== Compile the project
+
+```bash
+
+$ cd rcrs-sample-agent-java
+
+$ ./gradlew build
+```
+
+=== Execute the Rescue Simulation Sample Agent
+
+Open a terminal window, navigate to the ```rcrs-sample-agent-java``` root directory and execute
+
+```bash
+
+$ ./gradlew launch
+```

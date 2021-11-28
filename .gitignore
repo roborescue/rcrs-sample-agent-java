@@ -1,14 +1,9 @@
-# Compiled class file
+# Java
 *.class
 
-# Log file
+# Log files
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+hs_err_pid*
 
 # Package Files #
 *.jar
@@ -19,5 +14,41 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Gradle
+.gradle
+build
+bin
+
+# IntelliJ project
+*.iml
+*.ipr
+*.iws
+.idea
+
+# Eclipse project
+.settings
+.project
+.classpath
+
+# Gradle
+.gradle
+
+# Visual Studio Code
+.vscode
+
+# Theia IDE
+.theia
+
+# General MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node.js
+node_modules
+package-lock.json
+
+# Project
+logs
+jars
+lib
