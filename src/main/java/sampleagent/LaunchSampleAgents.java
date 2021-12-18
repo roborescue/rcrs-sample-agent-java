@@ -15,10 +15,6 @@ import rescuecore2.standard.entities.StandardEntityFactory;
 import rescuecore2.standard.entities.StandardPropertyFactory;
 import rescuecore2.standard.messages.StandardMessageComponentFactory;
 import rescuecore2.standard.messages.StandardMessageFactory;
-import sample.DummyAgent;
-import sample.SampleAmbulanceTeam;
-import sample.SampleFireBrigade;
-import sample.SamplePoliceForce;
 
 /**
  * Launcher for sample agents. This will launch as many instances of each of the
@@ -74,6 +70,8 @@ public final class LaunchSampleAgents {
       LOG.error("Error connecting agents", e);
     } catch (ConfigException e) {
       LOG.error("Configuration error", e);
+    } catch (ComponentConnectionException e) {
+      LOG.error("Component connection error ", e);
     } catch (ConnectionException e) {
       LOG.error("Error connecting agents", e);
     } catch (InterruptedException e) {
@@ -83,7 +81,8 @@ public final class LaunchSampleAgents {
 
 
   private static void connect(ComponentLauncher launcher, int fb, int pf,
-      int at, Config config) throws InterruptedException, ConnectionException {
+      int at, Config config) throws InterruptedException,
+      ComponentConnectionException, ConnectionException {
     int i = 0;
     try {
       while (fb-- != 0) {
