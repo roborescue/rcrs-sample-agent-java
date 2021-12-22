@@ -22,7 +22,7 @@ import sample.DistanceSorter;
  */
 public class SampleFireBrigade extends AbstractSampleAgent<FireBrigade> {
 
-  private static Logger LOG = Logger.getLogger(SampleFireBrigade.class);
+  private static final Logger LOG = Logger.getLogger(SampleFireBrigade.class);
   private Collection<EntityID> unexploredBuildings;
 
   @Override
