@@ -13,7 +13,7 @@ def getDateTime() {
 }
 
 dependencies {
-  implementation 'com.github.roborescue:rcrs-server:protobuf-v6-SNAPSHOT'
+  implementation 'com.github.roborescue:rcrs-server:master-SNAPSHOT'
 
   implementation 'log4j:log4j:1.2.17'
 
